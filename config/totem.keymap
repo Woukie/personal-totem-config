@@ -52,10 +52,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y     &kp F      &kp G      &kp C   &kp R  &kp L
-              &kp A          &kp O      &kp E       &kp U           &kp I     &kp D      &kp H      &kp T   &kp N  &kp S
-&kp CAPSLOCK  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X     &kp B      &kp M      &kp W   &kp V  &kp Z  &trans
-                                        &trans      &kp LEFT_SHIFT  &trans    &kp SPACE  &kp ENTER  &trans
+              &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y             &kp F      &kp G      &kp C   &kp R  &kp L
+              &kp A          &kp O      &kp E       &kp U           &kp I             &kp D      &kp H      &kp T   &kp N  &kp S
+&kp CAPSLOCK  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X             &kp B      &kp M      &kp W   &kp V  &kp Z  &trans
+                                        &trans      &kp LEFT_SHIFT  &studio_unlock    &kp SPACE  &kp ENTER  &trans
             >;
         };
 
