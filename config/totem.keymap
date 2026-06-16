@@ -52,10 +52,28 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y             &kp F      &kp G      &kp C   &kp R  &kp L
-              &kp A          &kp O      &kp E       &kp U           &kp I             &kp D      &kp H      &kp T   &kp N  &kp S
-&kp CAPSLOCK  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X             &kp B      &kp M      &kp W   &kp V  &kp Z  &trans
-                                        &trans      &kp LEFT_SHIFT  &studio_unlock    &kp SPACE  &kp ENTER  &trans
+        &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y    &kp F  &kp G      &kp C    &kp R  &kp L
+        &kp A          &kp O      &kp E       &kp U           &kp I    &kp D  &kp H      &kp T    &kp N  &kp S
+&trans  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &trans
+                                  &trans      &kp LEFT_SHIFT  &mo 1    &mo 1  &kp SPACE  &kp RET
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp N7  &kp N8  &kp N9  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N1  &kp N2  &kp N3  &trans  &trans  &trans
+                        &trans  &trans  &mo 2     &mo 2   &trans  &kp N0
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&studio_unlock  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
