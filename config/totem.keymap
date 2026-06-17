@@ -120,34 +120,34 @@
         &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y    &kp F  &kp G      &kp C    &kp R  &kp L
         &kp A          &kp O      &kp E       &kp U           &kp I    &kp D  &kp H      &kp T    &kp N  &kp S
 &trans  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &trans
-                                  &trans      &kp LEFT_SHIFT  &mo 1    &mo 1  &kp SPACE  &kp RET
+                                  &trans      &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE  &kp RET
             >;
         };
 
-        layer_1 {
+        numerical {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &kp N7  &kp N8  &kp N9  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5  &kp N6  &trans  &trans
 &studio_unlock  &trans  &trans  &trans  &trans  &trans    &kp N1  &kp N2  &kp N3  &trans  &trans  &trans
-                                &trans  &trans  &mo 2     &mo 2   &trans  &kp N0
+                                &trans  &trans  &trans    &mo 3   &trans  &kp N0
             >;
         };
 
-        layer_2 {
+        navigation {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &studio_unlock  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans  &mo 3     &trans  &trans  &trans
             >;
         };
 
         emojis {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &emoji_sob    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans        &trans  &trans  &trans
+        &trans  &trans  &trans  &trans           &trans             &emoji_thumbs_up  &emoji_thumbs_down  &trans              &trans       &trans
+        &trans  &trans  &trans  &emoji_brownify  &emoji_whiteify    &emoji_joy        &emoji_sob          &emoji_pregant_man  &emoji_rofl  &trans
+&trans  &trans  &trans  &trans  &trans           &trans             &trans            &trans              &trans              &trans       &trans  &trans
+                        &trans  &trans           &trans             &trans            &trans              &trans
             >;
         };
 
