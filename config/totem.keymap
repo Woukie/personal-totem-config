@@ -28,14 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        emojis {
-            bindings = <&mo 3>;
-            key-positions = <33 34>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         emoji_brownify: emoji_brownify {
@@ -117,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y    &kp F  &kp G      &kp C    &kp R  &kp L
-        &kp A          &kp O      &kp E       &kp U           &kp I    &kp D  &kp H      &kp T    &kp N  &kp S
-&trans  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &trans
-                                  &trans      &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE  &kp RET
+                  &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y    &kp F  &kp G      &kp C    &kp R  &kp L
+                  &kp A          &kp O      &kp E       &kp U           &kp I    &kp D  &kp H      &kp T    &kp N  &kp S
+&kp LEFT_CONTROL  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &trans
+                                            &trans      &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE  &kp RET
             >;
         };
 
@@ -135,10 +128,10 @@
 
         navigation {
             bindings = <
-           &trans  &trans  &trans    &trans   &trans    &trans  &trans    &trans    &trans     &trans
-           &trans  &trans  &kp HOME  &kp END  &trans    &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&kp LCTRL  &trans  &trans  &trans    &trans   &trans    &trans  &trans    &kp DOWN  &trans     &trans  &trans
-                           &trans    &trans   &mo 3     &trans  &trans    &trans
+        &trans  &trans  &trans    &trans   &trans    &trans  &trans    &trans    &trans     &trans
+        &trans  &trans  &kp HOME  &kp END  &trans    &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans
+&trans  &trans  &trans  &trans    &trans   &trans    &trans  &trans    &kp DOWN  &trans     &trans  &trans
+                        &trans    &trans   &mo 3     &trans  &trans    &trans
             >;
         };
 
