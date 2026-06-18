@@ -113,8 +113,8 @@
             bindings = <
                   &kp SQT        &kp COMMA  &kp PERIOD  &kp P           &kp Y    &kp F  &kp G      &kp C    &kp R  &kp L
                   &kp A          &kp O      &kp E       &kp U           &kp I    &kp D  &kp H      &kp T    &kp N  &kp S
-&kp LEFT_CONTROL  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &trans
-                                            &trans      &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE  &kp RET
+&kp LEFT_CONTROL  &kp SEMICOLON  &kp Q      &kp J       &kp K           &kp X    &kp B  &kp M      &kp W    &kp V  &kp Z  &kp BACKSPACE
+                                            &kp TAB     &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE  &kp RET
             >;
         };
 
@@ -123,25 +123,34 @@
         &trans  &trans    &trans    &trans     &trans    &trans    &kp N7  &kp N8  &kp N9  &trans
         &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans    &kp HOME  &kp N4  &kp N5  &kp N6  &trans
 &trans  &trans  &trans    &kp DOWN  &trans     &trans    &kp END   &kp N1  &kp N2  &kp N3  &trans  &trans
-                          &trans    &trans     &trans    &mo 3     &kp N0  &trans
+                          &trans    &trans     &trans    &mo 4     &kp N0  &mo 3
             >;
         };
 
         layer_2 {
             bindings = <
-                &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &bt BT_NXT      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&studio_unlock  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans  &mo 3     &trans  &trans  &trans
+        &kp TAB       &trans  &trans  &trans  &trans    &kp GRAVE  &trans  &trans  &kp LBKT   &kp RBKT
+        &kp CAPS      &trans  &trans  &trans  &trans    &trans     &trans  &trans  &kp FSLH   &kp EQUAL
+&trans  &kp LEFT_ALT  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &kp MINUS  &kp ENTER  &kp BSLH
+                              &trans  &trans  &mo 4     &trans     &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+        &trans  &kp F16  &kp F17  &kp F18  &trans    &trans  &kp F7  &kp F8  &kp F9  &trans
+        &trans  &kp F13  &kp F14  &kp F15  &trans    &trans  &kp F4  &kp F5  &kp F6  &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp F1  &kp F2  &kp F3  &trans  &trans
+                         &trans   &trans   &trans    &trans  &trans  &trans
             >;
         };
 
         emojis {
             bindings = <
-        &trans  &trans  &trans           &trans           &trans    &trans  &emoji_thumbs_up    &trans              &trans       &trans
-        &trans  &trans  &emoji_whiteify  &emoji_brownify  &trans    &trans  &emoji_sob          &emoji_pregant_man  &emoji_rofl  &trans
-&trans  &trans  &trans  &trans           &trans           &trans    &trans  &emoji_thumbs_down  &emoji_joy          &trans       &trans  &trans
-                        &trans           &trans           &trans    &trans  &trans              &trans
+                &trans          &trans  &trans           &trans           &trans    &trans  &emoji_thumbs_up    &trans              &trans       &trans
+                &bt BT_NXT      &trans  &emoji_whiteify  &emoji_brownify  &trans    &trans  &emoji_sob          &emoji_pregant_man  &emoji_rofl  &trans
+&studio_unlock  &bt BT_CLR_ALL  &trans  &trans           &trans           &trans    &trans  &emoji_thumbs_down  &emoji_joy          &trans       &trans  &trans
+                                        &trans           &trans           &trans    &trans  &trans              &trans
             >;
         };
 
