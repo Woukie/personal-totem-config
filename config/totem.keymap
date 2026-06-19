@@ -111,64 +111,55 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp SQT        &kp COMMA  &kp PERIOD  &kp P  &kp Y     &kp F      &kp G  &kp C      &kp R  &kp L
-         &kp A          &kp O      &kp E       &kp U  &kp I     &kp D      &kp H  &kp T      &kp N  &kp S
-&kp DEL  &kp SEMICOLON  &kp Q      &kp J       &kp K  &kp X     &kp B      &kp M  &kp W      &kp V  &kp Z  &kp BACKSPACE
-                                   &trans      &mo 1  &trans    &kp SPACE  &mo 2  &kp ENTER
-            >;
-        };
-
-        left_operators {
-            bindings = <
-        &trans          &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans
-        &kp LEFT_SHIFT  &kp LALT  &kp LCTRL  &kp TAB  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &kp CAPS  &kp LGUI   &kp ESC  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans     &trans   &trans    &trans  &trans  &trans
-            >;
-        };
-
-        right_operators {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans     &trans    &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp TAB  &kp LCTRL  &kp RALT  &kp LSHFT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp RGUI   &kp CAPS  &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans   &trans
+         &kp SQT        &kp COMMA  &kp PERIOD  &kp P  &kp Y        &kp F      &kp G  &kp C  &kp R  &kp L
+         &kp A          &kp O      &kp E       &kp U  &kp I        &kp D      &kp H  &kp T  &kp N  &kp S
+&kp DEL  &kp SEMICOLON  &kp Q      &kp J       &kp K  &kp X        &kp B      &kp M  &kp W  &kp V  &kp Z  &kp BACKSPACE
+                                   &mo 1       &mo 4  &kp SPACE    &kp ENTER  &mo 5  &mo 2
             >;
         };
 
         left_navigation {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans    &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LEFT  &kp UP    &kp RIGHT  &kp PG_UP    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp HOME  &kp DOWN  &kp END    &kp PG_DN    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans     &trans       &trans  &trans  &trans
+            >;
+        };
+
+        right_extras {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans     &trans    &trans    &trans     &trans
+        &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp LBKT  &kp RBKT  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp FSLH  &kp BSLH  &kp GRAVE  &trans  &trans
+                        &trans  &trans  &trans    &trans     &trans    &trans
+            >;
+        };
+
+        right_numerical {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        layer_1 {
+        left_modifiers {
             bindings = <
-        &trans        &trans    &trans    &trans     &trans    &trans    &kp N7  &kp N8  &kp N9  &trans
-        &trans        &kp LEFT  &kp UP    &kp RIGHT  &trans    &kp HOME  &kp N4  &kp N5  &kp N6  &trans
-&trans  &kp LEFT_ALT  &trans    &kp DOWN  &trans     &trans    &kp END   &kp N1  &kp N2  &kp N3  &trans  &trans
-                                &trans    &trans     &trans    &mo 7     &kp N0  &mo 6
+        &trans          &trans    &trans     &kp TAB  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp LEFT_SHIFT  &kp LALT  &kp LCTRL  &mo 3    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &kp CAPS  &kp LGUI   &kp ESC  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &trans   &trans    &trans  &trans  &trans
             >;
         };
 
-        layer_2 {
+        right_modifiers {
             bindings = <
-        &kp GRAVE     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp LBKT   &kp RBKT
-        &kp CAPS      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp FSLH   &kp EQUAL
-&trans  &kp LEFT_ALT  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp MINUS  &trans     &kp BSLH
-                              &trans  &trans  &mo 7     &trans  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-        &trans  &kp F16  &kp F17  &kp F18  &trans    &trans  &kp F7  &kp F8  &kp F9  &trans
-        &trans  &kp F13  &kp F14  &kp F15  &trans    &trans  &kp F4  &kp F5  &kp F6  &trans
-&trans  &trans  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp F1  &kp F2  &kp F3  &trans  &trans
-                         &trans   &trans   &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans     &trans    &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp TAB  &kp LCTRL  &kp RALT  &kp LSHFT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ESC  &kp RGUI   &kp CAPS  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans   &trans
             >;
         };
 
