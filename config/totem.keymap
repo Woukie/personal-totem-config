@@ -29,14 +29,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        right_media {
-            bindings = <&mo 3>;
-            key-positions = <13 34>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         emoji_brownify: emoji_brownify {
